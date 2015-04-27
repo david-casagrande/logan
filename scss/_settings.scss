@@ -1,0 +1,95 @@
+$background-color: #131509;
+$navigation-color: #989997;
+$navigation-color-dark: #707070;
+$navigation-default-hover-color: #786fb2;
+$navigation-mobile-background-color: #1a1d0f;
+$nav-toggle-color: #d8d8d8;
+$custom-font: 'Open Sans', sans-serif;
+$border-color: $navigation-color;
+$border-width: 1px;
+$border-style: solid;
+$border: $border-width $border-style $border-color;
+
+$link-color: #4e83b0;
+$modal-header-height: 50px;
+$modal-header-radius: 6px;
+$modal-background-color: #f0f0f0;
+$modal-body-padding: 2.25rem;
+$modal-narrative-background-color: #dbdbdb;
+$modal-narrative-padding-lr: 1.5rem;
+$modal-mobile-padding-lr: 1.25rem;
+
+$wp-admin-bar-height: 32px;
+
+$logo-width: 157px;
+$navigation-padding: 20px;
+$navigation-width: 164px; //$logo-width + ($navigation-padding*2);
+
+$mobile-lr-padding: 1.5rem;
+
+%background-color {
+  background-color: $background-color;
+}
+
+%navigation-color {
+  color: $navigation-color;
+}
+
+%navigation-color-dark {
+  color: $navigation-color-dark;
+}
+
+%custom-font {
+  font-family: $custom-font;
+}
+
+%uppercase {
+  text-transform: uppercase;
+}
+
+%white {
+  color: #fff;
+}
+
+%lighter-font {
+  font-weight: lighter;
+}
+
+%fixed-window {
+  height: 100%;
+  left: 0;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+%absolute-window {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+%hundred-width {
+  width: 100%;
+}
+
+%display-table {
+  display: table;
+  width: 100%;
+}
+
+%display-table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+%align-top {
+  vertical-align: top;
+}
+
+@mixin rotate($degrees) {
+  transform: rotate($degrees);
+}
