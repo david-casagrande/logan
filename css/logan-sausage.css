@@ -320,6 +320,15 @@ table {
 td, th {
   padding: 0; }
 
+.main-nav {
+  background-color: #000; }
+
+.display-block {
+  display: block !important; }
+
+.position-fixed {
+  position: fixed !important; }
+
 meta.foundation-version {
   font-family: "/5.5.1/"; }
 
@@ -1885,3 +1894,28 @@ blockquote, blockquote p {
     font-size: 1.125rem; }
   h6 {
     font-size: 1rem; } }
+
+.main-nav {
+  height: 78px;
+  left: 0;
+  top: 85px;
+  width: 100%; }
+
+.customize-support .main-nav {
+  top: 117px; }
+
+.logo {
+  background-image: url("../images/logo.png");
+  background-size: 100% auto;
+  height: 248px;
+  left: 50%;
+  margin-left: -161px;
+  top: 17px;
+  width: 322px; }
+
+.customize-support .logo {
+  top: 49px; }
+
+body.custom-background {
+  background-size: cover;
+  background-position: center center !important; }

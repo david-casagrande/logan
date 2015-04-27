@@ -1,0 +1,13 @@
+.logo {
+  background-image: $logo-image-url;
+  background-size: 100% auto;
+  height: $logo-height;
+  left: 50%;
+  margin-left: -($logo-width/2);
+  top: $logo-top;
+  width: $logo-width;
+}
+
+.customize-support .logo {
+  top: $logo-top + $wp-admin-bar-height;
+}

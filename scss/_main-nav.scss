@@ -1,0 +1,11 @@
+.main-nav {
+  @extend %main-nav-background;
+  height: $main-nav-height;
+  left: 0;
+  top: $main-nav-top;
+  width: 100%;
+}
+
+.customize-support .main-nav {
+  top: $main-nav-top + $wp-admin-bar-height;
+}

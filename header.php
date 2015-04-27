@@ -7,4 +7,6 @@
   <?php wp_head(); ?>
 </head>
 
-<body>
+<body <?php body_class( $class ); ?>>
+  <div class="main-nav position-fixed"></div>
+  <a class="logo display-block position-fixed"></a>
