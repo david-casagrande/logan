@@ -1,9 +1,35 @@
 .main-nav {
+  @extend %hundred-width;
   @extend %main-nav-background;
+  @extend %position-fixed;
   height: $main-nav-height;
   left: 0;
   top: $main-nav-top;
-  width: 100%;
+
+  .menu  {
+    @extend %uppercase;
+    margin: 0;
+
+    li {
+      @extend %display-inline-block;
+      padding: 0 1rem;
+    }
+
+    a {
+      @extend %display-block;
+      @extend %align-middle;
+      color: $main-nav-color;
+      line-height: $main-nav-height;
+
+      &:hover {
+        @extend %logan-primary-color;
+      }
+    }
+
+    .current-menu-item a {
+      @extend %logan-primary-color;
+    }
+  }
 }
 
 .customize-support .main-nav {

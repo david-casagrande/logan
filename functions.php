@@ -10,22 +10,12 @@
   // include($template_directory.'/functions/enque_scripts.php');
   // include($template_directory.'/functions/ajax/portfolio.php');
 
-  // function register_menus() {
-  //   $menus = array(
-  //     'main-nav' => __('Main Nav')
-  //   );
-  //   register_nav_menus($menus);
-  // }
-  // add_action( 'init', 'register_menus' );
-
-  // function mytheme_customize_register( $wp_customize ) {
-  //  //All our sections, settings, and controls will be added here
-  //  $wp_customize->add_setting( 'header_textcolor' , array(
-  //      'default'     => '#000000',
-  //      'transport'   => 'refresh',
-  //  ) );
-  //
-  // }
-  // add_action( 'customize_register', 'mytheme_customize_register' );
-
+  function register_menus() {
+    $menus = array(
+      'main-nav-left' => __('Main Nav Left'),
+      'main-nav-right' => __('Main Nav Right')
+    );
+    register_nav_menus($menus);
+  }
+  add_action( 'init', 'register_menus' );
 ?>

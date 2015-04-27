@@ -8,5 +8,5 @@
 </head>
 
 <body <?php body_class( $class ); ?>>
-  <div class="main-nav position-fixed"></div>
-  <a class="logo display-block position-fixed"></a>
+  <?php include('templates/_main_nav.php'); ?>
+  <a href="/" class="logo" title="<?php bloginfo('name'); ?>"></a>

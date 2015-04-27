@@ -1,4 +1,6 @@
 .logo {
+  @extend %display-block;
+  @extend %position-fixed;
   background-image: $logo-image-url;
   background-size: 100% auto;
   height: $logo-height;

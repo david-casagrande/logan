@@ -323,11 +323,26 @@ td, th {
 .main-nav {
   background-color: #000; }
 
-.display-block {
-  display: block !important; }
+.main-nav .menu a:hover, .main-nav .menu .current-menu-item a {
+  color: #d12229; }
 
-.position-fixed {
-  position: fixed !important; }
+.main-nav .menu {
+  text-transform: uppercase; }
+
+.main-nav {
+  width: 100%; }
+
+.main-nav .menu a, .logo {
+  display: block; }
+
+.main-nav .menu li {
+  display: inline-block; }
+
+.main-nav, .logo {
+  position: fixed; }
+
+.main-nav .menu a {
+  vertical-align: middle; }
 
 meta.foundation-version {
   font-family: "/5.5.1/"; }
@@ -1684,11 +1699,11 @@ div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, t
 
 /* Default Link Styles */
 a {
-  color: #008CBA;
+  color: #d12229;
   text-decoration: none;
   line-height: inherit; }
   a:hover, a:focus {
-    color: #0078a0; }
+    color: #b41d23; }
   a img {
     border: none; }
 
@@ -1898,8 +1913,14 @@ blockquote, blockquote p {
 .main-nav {
   height: 78px;
   left: 0;
-  top: 85px;
-  width: 100%; }
+  top: 85px; }
+  .main-nav .menu {
+    margin: 0; }
+    .main-nav .menu li {
+      padding: 0 1rem; }
+    .main-nav .menu a {
+      color: #fff;
+      line-height: 78px; }
 
 .customize-support .main-nav {
   top: 117px; }

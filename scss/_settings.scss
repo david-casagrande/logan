@@ -1,8 +1,11 @@
 $wp-admin-bar-height: 32px;
 
+$logan-primary-color: #d12229;
+
 $main-nav-background-color: #000;
 $main-nav-height: 78px;
 $main-nav-top: 85px;
+$main-nav-color: #fff;
 
 $logo-image-url: image-url('logo.png');
 $logo-width: 322px;
@@ -57,6 +60,10 @@ $logo-top: 17px;
   background-color: $main-nav-background-color;
 }
 
+%logan-primary-color {
+  color: $logan-primary-color;
+}
+
 %uppercase {
   text-transform: uppercase;
 }
@@ -69,25 +76,33 @@ $logo-top: 17px;
   font-weight: lighter;
 }
 
-%fixed-window {
-  height: 100%;
-  left: 0;
-  overflow-y: auto;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-%absolute-window {
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
+// %fixed-window {
+//   height: 100%;
+//   left: 0;
+//   overflow-y: auto;
+//   position: fixed;
+//   top: 0;
+//   width: 100%;
+// }
+//
+// %absolute-window {
+//   height: 100%;
+//   left: 0;
+//   position: absolute;
+//   top: 0;
+//   width: 100%;
+// }
 
 %hundred-width {
   width: 100%;
+}
+
+%display-block {
+  display: block;
+}
+
+%display-inline-block {
+  display: inline-block;
 }
 
 %display-table {
@@ -100,17 +115,22 @@ $logo-top: 17px;
   vertical-align: middle;
 }
 
+%position-fixed {
+  position: fixed;
+}
+
+%position-absolute {
+  position: fixed;
+}
+
 %align-top {
   vertical-align: top;
 }
 
-.display-block {
-  display: block !important;
+%align-middle {
+  vertical-align: middle;
 }
 
-.position-fixed {
-  position: fixed !important;
-}
 // @mixin rotate($degrees) {
 //   transform: rotate($degrees);
 // }
