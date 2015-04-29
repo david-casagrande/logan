@@ -1,4 +1,16 @@
-body.custom-background {
+body.custom-background,
+body:before {
   background-size: cover;
-  background-position: center center !important;
+  background-position: top center !important;
+}
+
+body:before {
+  @extend %hundred-width;
+  @extend %left-zero;
+  @extend %position-fixed;
+  @extend %top-zero;
+
+  content: '';
+  height: 100px;
+  z-index: 2;
 }

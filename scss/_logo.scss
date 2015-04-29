@@ -8,6 +8,7 @@
   margin-left: -($logo-width/2);
   top: $logo-top;
   width: $logo-width;
+  z-index: 3;
 }
 
 .customize-support .logo {
