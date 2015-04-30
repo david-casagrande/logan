@@ -1,9 +1,9 @@
 .main-nav {
   @extend %hundred-width;
-  @extend %left-zero;
   @extend %main-nav-background;
   @extend %position-fixed;
   height: $main-nav-height;
+  left: 0;
   top: $main-nav-top;
   z-index: 2;
 

@@ -1,7 +1,9 @@
 body.custom-background,
 body:before {
   background-size: cover;
-  background-position: top center !important;
+  background-position: center center !important;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 body:before {
@@ -11,6 +13,6 @@ body:before {
   @extend %top-zero;
 
   content: '';
-  height: 100px;
+  height: $main-nav-height + $main-nav-top;
   z-index: 2;
 }

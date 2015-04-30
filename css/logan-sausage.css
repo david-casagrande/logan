@@ -335,7 +335,7 @@ td, th {
 body:before {
   top: 0; }
 
-.main-nav, body:before {
+body:before {
   left: 0; }
 
 .main-nav .menu a, .logo {
@@ -1918,6 +1918,7 @@ blockquote, blockquote p {
 
 .main-nav {
   height: 78px;
+  left: 0;
   top: 85px;
   z-index: 2; }
   .main-nav .menu {
@@ -1946,11 +1947,13 @@ blockquote, blockquote p {
 
 body.custom-background, body:before {
   background-size: cover;
-  background-position: top center !important; }
+  background-position: center center !important;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
 
 body:before {
   content: '';
-  height: 100px;
+  height: 163px;
   z-index: 2; }
 
 .main-view {
@@ -1959,6 +1962,3 @@ body:before {
   z-index: 1; }
   .main-view > .row {
     background: rgba(255, 255, 255, 0.85); }
-
-.customize-support .main-view {
-  padding-top: 195px; }

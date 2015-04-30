@@ -10,6 +10,6 @@
   <?php wp_head(); ?>
 </head>
 
-<body <?php body_class( $class ); ?>>
+<body <?php body_class($class); ?>>
   <?php include('templates/_main_nav.php'); ?>
   <a href="/" class="logo" title="<?php bloginfo('name'); ?>"></a>
