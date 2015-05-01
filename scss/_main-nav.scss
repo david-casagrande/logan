@@ -7,29 +7,29 @@
   top: $main-nav-top;
   z-index: 2;
 
-  .menu  {
+  .menu {
     @extend %uppercase;
     margin: 0;
+  }
 
-    li {
-      @extend %display-inline-block;
-      padding: 0 1rem;
-    }
+  li {
+    @extend %display-inline-block;
+    padding: 0 1rem;
+  }
 
-    a {
-      @extend %display-block;
-      @extend %align-middle;
-      color: $main-nav-color;
-      line-height: $main-nav-height;
+  a {
+    @extend %display-block;
+    @extend %align-middle;
+    color: $main-nav-color;
+    line-height: $main-nav-height;
 
-      &:hover {
-        @extend %logan-primary-color;
-      }
-    }
-
-    .current-menu-item a {
+    &:hover {
       @extend %logan-primary-color;
     }
+  }
+
+  .current-menu-item a {
+    @extend %logan-primary-color;
   }
 }
 

@@ -11,6 +11,8 @@ $logo-image-url: image-url('logo.png');
 $logo-width: 322px;
 $logo-height: 248px;
 $logo-top: 17px;
+
+$main-view-background: rgba(255, 255, 255, 0.85);
 // $background-color: #131509;
 // $navigation-color: a#989997;
 // $navigation-color-dark: #707070;
@@ -58,6 +60,10 @@ $logo-top: 17px;
 
 %main-nav-background {
   background-color: $main-nav-background-color;
+}
+
+%main-view-background {
+  background-color: $main-view-background;
 }
 
 %logan-primary-color {

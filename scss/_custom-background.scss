@@ -1,18 +1,20 @@
-body.custom-background,
-body:before {
-  background-size: cover;
-  background-position: center center !important;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
+body {
+  &.custom-background,
+  &:before {
+    background-attachment: fixed;
+    background-position: center center !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
-body:before {
-  @extend %hundred-width;
-  @extend %left-zero;
-  @extend %position-fixed;
-  @extend %top-zero;
+  &:before {
+    @extend %hundred-width;
+    @extend %left-zero;
+    @extend %position-fixed;
+    @extend %top-zero;
 
-  content: '';
-  height: $main-nav-height + $main-nav-top;
-  z-index: 2;
+    content: '';
+    height: $main-nav-height + $main-nav-top;
+    z-index: 2;
+  }
 }

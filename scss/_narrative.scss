@@ -1,0 +1,26 @@
+.narrative {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  h3 {
+    @extend %logan-primary-color;
+    @extend %uppercase;
+    margin-bottom: 0;
+  }
+
+  p,
+  li {
+    font-size: 0.875rem;
+  }
+
+  .primary {
+    @extend %logan-primary-color;
+  }
+}

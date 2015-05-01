@@ -1,11 +1,10 @@
 .main-view {
+  padding-bottom: 60px;
   padding-top: $main-nav-height + $main-nav-top;
-  margin-bottom: 60px;
   z-index: 1;
 
   > .row {
-    background: rgba(255, 255, 255, 0.85);
-    // margin: 0 auto 60px;
+    @extend %main-view-background;
   }
 }
 
