@@ -8,14 +8,12 @@
   // include($template_directory.'/functions/custom_post_types/portfolio.php');
   include($template_directory.'/functions/enque_styles.php');
   include($template_directory.'/functions/enque_scripts.php');
+  include($template_directory.'/functions/register_menus.php');
+  include($template_directory.'/functions/red_shortcode.php');
+
   // include($template_directory.'/functions/ajax/portfolio.php');
 
-  function register_menus() {
-    $menus = array(
-      'main-nav-left' => __('Main Nav Left'),
-      'main-nav-right' => __('Main Nav Right')
-    );
-    register_nav_menus($menus);
-  }
-  add_action( 'init', 'register_menus' );
+
+
+
 ?>
