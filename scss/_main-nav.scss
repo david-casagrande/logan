@@ -2,6 +2,7 @@
   @extend %hundred-width;
   @extend %main-nav-background;
   @extend %position-fixed;
+  @extend %secondary-font;
   height: $main-nav-height;
   left: 0;
   top: $main-nav-top;
@@ -14,6 +15,7 @@
 
   li {
     @extend %display-inline-block;
+    font-size: 1.25rem;
     padding: 0 1rem;
   }
 

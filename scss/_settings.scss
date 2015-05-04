@@ -1,11 +1,29 @@
+@font-face {
+  font-family: 'bebas';
+  src: url('../fonts/bebas___-webfont.eot');
+  src: url('../fonts/bebas___-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/bebas___-webfont.woff2') format('woff2'),
+       url('../fonts/bebas___-webfont.woff') format('woff'),
+       url('../fonts/bebas___-webfont.ttf') format('truetype'),
+       url('../fonts/bebas___-webfont.svg#bebasregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 $wp-admin-bar-height: 32px;
 
 $logan-primary-color: #d12229;
+
+$logan-default-font: 'Lato', sans-serif;
+$logan-secondary-font: 'bebas', sans-serif;
 
 $main-nav-background-color: #000;
 $main-nav-height: 78px;
 $main-nav-top: 85px;
 $main-nav-color: #fff;
+
+$main-view-row-padding-top: 5.5rem;
+$main-view-middle-row-padding-top: 4.25rem;
 
 $logo-image-url: image-url('logo.png');
 $logo-width: 322px;
@@ -85,6 +103,14 @@ $tab-height: 55px;
 
 %lighter-font {
   font-weight: lighter;
+}
+
+%default-font {
+  font-family: $logan-default-font;
+}
+
+%secondary-font {
+  font-family: $logan-secondary-font;
 }
 
 // %fixed-window {

@@ -320,6 +320,13 @@ table {
 td, th {
   padding: 0; }
 
+@font-face {
+  font-family: 'bebas';
+  src: url('../fonts/bebas___-webfont.eot');
+  src: url('../fonts/bebas___-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/bebas___-webfont.woff2') format('woff2'), url('../fonts/bebas___-webfont.woff') format('woff'), url('../fonts/bebas___-webfont.ttf') format('truetype'), url('../fonts/bebas___-webfont.svg#bebasregular') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
 .main-nav {
   background-color: #000; }
 
@@ -332,7 +339,10 @@ td, th {
 .main-nav .menu, .narrative h3 {
   text-transform: uppercase; }
 
-.main-nav, body:before {
+.main-nav, .narrative h3 {
+  font-family: 'bebas', sans-serif; }
+
+body:before, .main-nav {
   width: 100%; }
 
 body:before {
@@ -347,7 +357,7 @@ body:before {
 .main-nav li {
   display: inline-block; }
 
-.main-nav, .logo, body:before {
+body:before, .main-nav, .logo {
   position: fixed; }
 
 .main-view .view-more-tab {
@@ -417,7 +427,7 @@ body {
   color: #222;
   padding: 0;
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: normal;
   font-style: normal;
   line-height: 1.5;
@@ -1740,7 +1750,7 @@ p {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #222222;
@@ -1925,6 +1935,16 @@ blockquote, blockquote p {
   h6 {
     font-size: 1rem; } }
 
+body.custom-background, body:before {
+  background-attachment: fixed;
+  background-position: center center !important;
+  background-repeat: no-repeat;
+  background-size: cover; }
+body:before {
+  content: '';
+  height: 163px;
+  z-index: 2; }
+
 .main-nav {
   height: 78px;
   left: 0;
@@ -1933,6 +1953,7 @@ blockquote, blockquote p {
   .main-nav .menu {
     margin: 0; }
   .main-nav li {
+    font-size: 1.25rem;
     padding: 0 1rem; }
   .main-nav a {
     color: #fff;
@@ -1954,22 +1975,12 @@ blockquote, blockquote p {
 .customize-support .logo {
   top: 49px; }
 
-body.custom-background, body:before {
-  background-attachment: fixed;
-  background-position: center center !important;
-  background-repeat: no-repeat;
-  background-size: cover; }
-body:before {
-  content: '';
-  height: 163px;
-  z-index: 2; }
-
 .main-view {
   padding-bottom: 60px;
   padding-top: 163px;
   z-index: 1; }
   .main-view > .row {
-    padding: 4rem 2rem 2rem; }
+    padding: 5.5rem 2rem 2rem; }
   .main-view .view-more-tab {
     background-image: url("../images/tab.png");
     background-position: top center;
@@ -1980,11 +1991,20 @@ body:before {
     top: -55px;
     width: 140px; }
 
+@media only screen and (min-width:40.063em) {
+  .main-view > .row > div:nth-of-type(2) {
+    padding-top: 4.25rem; } }
+
 .narrative h1, .narrative h2, .narrative h3, .narrative h4, .narrative h5, .narrative h6 {
   font-size: 1rem;
   font-weight: bold;
   margin-bottom: 1.25rem; }
 .narrative h3 {
+  font-size: 1.125rem;
   margin-bottom: 0; }
 .narrative p, .narrative li {
   font-size: 0.875rem; }
+.narrative img {
+  width: 100%;
+  height: auto;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); }
