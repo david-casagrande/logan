@@ -13,8 +13,14 @@ gulp.task('sass', function() {
     .pipe(gulp.dest('./css'))
 });
 
-gulp.task('watch', function() {
-  gulp.watch(scssPath, ['sass'])
+gulp.task('vendor', function() {
+  gulp.src(['node_modules/smooth-scroll/dist/js/smooth-scroll.js'])
+    .pipe(concat('vendor.js'))
+    .pipe(gulp.dest('./javascript'))
 });
 
-gulp.task('default', ['watch', 'sass'])
+gulp.task('watch', function() {
+  gulp.watch(scssPath, ['sass', 'vendor'])
+});
+
+gulp.task('default', ['watch', 'sass', 'vendor'])

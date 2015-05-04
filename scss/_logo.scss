@@ -5,7 +5,7 @@
   background-size: 100% auto;
   height: $logo-height;
   left: 50%;
-  margin-left: -($logo-width/2);
+  margin-left: -($logo-width/2) - 10px;
   top: $logo-top;
   width: $logo-width;
   z-index: 3;

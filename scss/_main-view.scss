@@ -5,9 +5,20 @@
 
   > .row {
     @extend %main-view-background;
+    @extend %position-relative;
+    padding: 4rem 2rem 2rem;
+  }
+
+  .view-more-tab {
+    @extend %display-block;
+    @extend %position-absolute;
+    background-image: $tab-image-url;
+    background-position: top center;
+    height: $tab-height;
+    left: 50%;
+    margin-left: -($tab-width/2);
+    opacity: $main-view-background-opacity;
+    top: -$tab-height;
+    width: $tab-width;
   }
 }
-
-// .customize-support .main-view {
-//   padding-top: $main-nav-height + $main-nav-top + $wp-admin-bar-height;
-// }

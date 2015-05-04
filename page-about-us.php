@@ -1,7 +1,8 @@
 <?php get_header(); ?>
 
-<div class="main-view">
-  <div class="row">
+<div class="main-view with-tab hide">
+  <div id="about-us" class="row">
+    <a href="#about-us" class="view-more-tab"></a>
     <?php
       if ( have_posts() ) {
         while ( have_posts() ) {
@@ -12,11 +13,8 @@
           echo "<div class=\"medium-4 columns narrative\">{$narrative1}</div>";
           echo "<div class=\"medium-4 columns narrative\">{$narrative2}</div>";
           echo "<div class=\"medium-4 columns narrative\">{$narrative3}</div>";
-          //
-          // Post Content here
-          //
-        } // end while
-      } // end if
+        }
+      }
     ?>
   </div>
 </div>

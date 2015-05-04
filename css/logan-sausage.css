@@ -341,7 +341,7 @@ body:before {
 body:before {
   left: 0; }
 
-.main-nav a, .logo {
+.main-nav a, .logo, .main-view .view-more-tab {
   display: block; }
 
 .main-nav li {
@@ -349,6 +349,12 @@ body:before {
 
 .main-nav, .logo, body:before {
   position: fixed; }
+
+.main-view .view-more-tab {
+  position: absolute; }
+
+.main-view > .row {
+  position: relative; }
 
 .main-nav a {
   vertical-align: middle; }
@@ -1940,7 +1946,7 @@ blockquote, blockquote p {
   background-size: 100% auto;
   height: 248px;
   left: 50%;
-  margin-left: -161px;
+  margin-left: -171px;
   top: 17px;
   width: 322px;
   z-index: 3; }
@@ -1962,10 +1968,22 @@ body:before {
   padding-bottom: 60px;
   padding-top: 163px;
   z-index: 1; }
+  .main-view > .row {
+    padding: 4rem 2rem 2rem; }
+  .main-view .view-more-tab {
+    background-image: url("../images/tab.png");
+    background-position: top center;
+    height: 55px;
+    left: 50%;
+    margin-left: -70px;
+    opacity: 0.85;
+    top: -55px;
+    width: 140px; }
 
 .narrative h1, .narrative h2, .narrative h3, .narrative h4, .narrative h5, .narrative h6 {
   font-size: 1rem;
-  font-weight: bold; }
+  font-weight: bold;
+  margin-bottom: 1.25rem; }
 .narrative h3 {
   margin-bottom: 0; }
 .narrative p, .narrative li {

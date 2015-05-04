@@ -12,7 +12,12 @@ $logo-width: 322px;
 $logo-height: 248px;
 $logo-top: 17px;
 
-$main-view-background: rgba(255, 255, 255, 0.85);
+$main-view-background-opacity: 0.85;
+$main-view-background: rgba(255, 255, 255, $main-view-background-opacity);
+
+$tab-image-url: image-url('tab.png');
+$tab-width: 140px;
+$tab-height: 55px;
 // $background-color: #131509;
 // $navigation-color: a#989997;
 // $navigation-color-dark: #707070;
@@ -134,7 +139,11 @@ $main-view-background: rgba(255, 255, 255, 0.85);
 }
 
 %position-absolute {
-  position: fixed;
+  position: absolute;
+}
+
+%position-relative {
+  position: relative;
 }
 
 %align-top {
