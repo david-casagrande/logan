@@ -27,9 +27,20 @@
     @extend %logan-primary-color;
   }
 
+  .call-out {
+    @extend %display-block;
+    @extend %narrative-box-shadow;
+    @extend %secondary-font;
+    background-color: $narrative-callout-background-color;
+    color: $narrative-callout-color;
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
+    padding: 1rem 1.375rem;
+  }
+
   img {
+    @extend %narrative-box-shadow;
     width: 100%;
     height: auto;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.30);
   }
 }

@@ -36,6 +36,11 @@ $main-view-background: rgba(255, 255, 255, $main-view-background-opacity);
 $tab-image-url: image-url('tab.png');
 $tab-width: 140px;
 $tab-height: 55px;
+
+$narrative-callout-background-color: $logan-primary-color;
+$narrative-callout-color: #fff;
+$narrative-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.30);
+
 // $background-color: #131509;
 // $navigation-color: a#989997;
 // $navigation-color-dark: #707070;
@@ -179,6 +184,11 @@ $tab-height: 55px;
 %align-middle {
   vertical-align: middle;
 }
+
+%narrative-box-shadow {
+  box-shadow: $narrative-box-shadow;
+}
+
 
 // @mixin rotate($degrees) {
 //   transform: rotate($degrees);

@@ -339,7 +339,7 @@ td, th {
 .main-nav .menu, .narrative h3 {
   text-transform: uppercase; }
 
-.main-nav, .narrative h3 {
+.main-nav, .narrative h3, .narrative .call-out {
   font-family: 'bebas', sans-serif; }
 
 body:before, .main-nav {
@@ -351,7 +351,7 @@ body:before {
 body:before {
   left: 0; }
 
-.main-nav a, .logo, .main-view .view-more-tab {
+.main-nav a, .logo, .main-view .view-more-tab, .narrative .call-out {
   display: block; }
 
 .main-nav li {
@@ -368,6 +368,9 @@ body:before, .main-nav, .logo {
 
 .main-nav a {
   vertical-align: middle; }
+
+.narrative .call-out, .narrative img {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); }
 
 meta.foundation-version {
   font-family: "/5.5.1/"; }
@@ -2004,7 +2007,12 @@ body:before {
   margin-bottom: 0; }
 .narrative p, .narrative li {
   font-size: 0.875rem; }
+.narrative .call-out {
+  background-color: #d12229;
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 1.25rem;
+  padding: 1rem 1.375rem; }
 .narrative img {
   width: 100%;
-  height: auto;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); }
+  height: auto; }
