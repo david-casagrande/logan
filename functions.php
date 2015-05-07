@@ -10,10 +10,6 @@
   include($template_directory.'/functions/enque_scripts.php');
   include($template_directory.'/functions/register_menus.php');
   include($template_directory.'/functions/shortcodes.php');
-
+  include($template_directory.'/functions/theme_customize_register.php');
   // include($template_directory.'/functions/ajax/portfolio.php');
-
-
-
-
 ?>
