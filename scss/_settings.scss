@@ -22,6 +22,8 @@ $main-nav-height: 78px;
 $main-nav-top: 85px;
 $main-nav-color: #fff;
 
+$sub-nav-active-color: #000;
+
 $main-view-row-padding-top: 5.5rem;
 $main-view-middle-row-padding-top: 4.25rem;
 
@@ -199,6 +201,10 @@ $narrative-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.30);
   content: '';
   height: 100%;
   margin-right: -0.25em;
+}
+
+%sub-nav-active-color {
+  color: $sub-nav-active-color;
 }
 
 
