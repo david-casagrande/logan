@@ -6,7 +6,11 @@
   > .row {
     @extend %main-view-background;
     @extend %position-relative;
-    padding: $main-view-row-padding-top 2rem 2rem;
+    padding: $main-view-row-padding-top 1rem 2rem;
+
+    &.extra-padding {
+      padding-top: $main-view-row-padding-top + 4rem;
+    }
   }
 
   .view-more-tab {
@@ -24,7 +28,7 @@
 }
 
 @media #{$medium-up} {
-  .main-view > .row > div:nth-of-type(2) {
+  .main-view > .row > .middle-column {
     padding-top: $main-view-middle-row-padding-top;
   }
 }

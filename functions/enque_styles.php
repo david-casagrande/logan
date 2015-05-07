@@ -5,6 +5,10 @@
 
     wp_register_style('google_font', 'https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic');
     wp_enqueue_style('google_font');
+
+    wp_register_style('font_awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+    wp_enqueue_style('font_awesome');
+
     wp_register_style('logan_sausage', $template_dir.$css_file);
     wp_enqueue_style('logan_sausage');
   }

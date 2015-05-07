@@ -17,7 +17,7 @@
             echo "<a href=\"#{$name}\" class=\"view-more-tab\"></a>";
           }
           echo "<div class=\"medium-4 columns narrative\">{$narrative1}</div>";
-          echo "<div class=\"medium-4 columns narrative\">{$narrative2}</div>";
+          echo "<div class=\"medium-4 columns narrative middle-column\">{$narrative2}</div>";
           echo "<div class=\"medium-4 columns narrative\">{$narrative3}</div>";
         echo "</div>";
       echo "</div>";

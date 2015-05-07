@@ -16,6 +16,10 @@
     @extend %uppercase;
     font-size: 1.125rem;
     margin-bottom: 0;
+
+    &.with-margin {
+      margin-bottom: 0.5rem;
+    }
   }
 
   p,
@@ -40,7 +44,7 @@
 
   img {
     @extend %narrative-box-shadow;
-    width: 100%;
+    @extend %hundred-width;
     height: auto;
   }
 }

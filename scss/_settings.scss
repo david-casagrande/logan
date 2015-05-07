@@ -165,6 +165,10 @@ $narrative-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.30);
   vertical-align: middle;
 }
 
+%display-none {
+  display: none;
+}
+
 %position-fixed {
   position: fixed;
 }
@@ -187,6 +191,14 @@ $narrative-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.30);
 
 %narrative-box-shadow {
   box-shadow: $narrative-box-shadow;
+}
+
+%inline-block-vertical-align {
+  @extend %align-middle;
+  @extend %display-inline-block;
+  content: '';
+  height: 100%;
+  margin-right: -0.25em;
 }
 
 
