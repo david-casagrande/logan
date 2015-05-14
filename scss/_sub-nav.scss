@@ -48,7 +48,7 @@
   @extend %default-font;
 
   li {
-    display: list-item;
+    @extend %display-list-item;
     list-style-type: disc;
     font-size: 1.25rem;
 
@@ -67,5 +67,9 @@
   li.current-menu-item,
   li.current-menu-parent {
     @extend %display-block;
+  }
+
+  .sub-menu li {
+    @extend %display-list-item;
   }
 }
