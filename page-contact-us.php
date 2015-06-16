@@ -5,6 +5,7 @@
     while ( have_posts() ) {
       the_post();
       $image = get_field('image');
+      $heading = get_field('heading');
       $narrative1 = get_field('narrative_1');
       $narrative2 = get_field('narrative_2');
       $twitter = get_field('twitter');
@@ -15,6 +16,7 @@
           echo "<div class=\"medium-6 columns narrative\"><p><img src=\"{$image}\" alt=\"Contact Us\" /></p></div>";
           echo "<div class=\"medium-5 columns\">";
             echo "<div class=\"row\">";
+              echo "<div class=\"small-12 columns narrative\">{$heading}</div>";
               echo "<div class=\"medium-6 columns narrative\">{$narrative1}</div>";
               echo "<div class=\"medium-6 columns narrative\">{$narrative2}</div>";
               echo "<div class=\"small-12 columns narrative\">";
