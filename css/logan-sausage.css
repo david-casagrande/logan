@@ -2096,12 +2096,14 @@ body:before {
   padding: 1rem 1.375rem; }
 .narrative img {
   height: auto; }
-.narrative h1 img {
+.narrative h1 img, .narrative h2 img {
   box-shadow: none;
   width: auto;
   max-width: 100%;
   margin-top: 0.625rem;
   margin-bottom: -0.75rem; }
+.narrative h2 img {
+  margin-top: -0.75rem; }
 
 .social-media {
   padding: 0.125rem 0.25rem;
