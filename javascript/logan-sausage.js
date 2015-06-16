@@ -2,6 +2,7 @@
   'use strict';
 
   withTab();
+  productNav();
 
   // checkScrollTimer();
 
@@ -40,6 +41,22 @@
       };
       smoothScroll.animateScroll(null, e.target.hash, options);
     });
+  }
+
+  function productNav() {
+    var navItems = document.querySelectorAll('.products-nav a');
+    console.log(navItems.length);
+    for(var x = 0; x < navItems.length; x++) {
+      navItems[x].addEventListener('click', function(e) {
+        e.preventDefault();
+        var sibling = this.nextElementSibling;
+        if(!sibling) { return; }
+        sibling.classList.toggle('open');
+
+        var parent = this.parentNode;
+        parent.classList.toggle('current-menu-item');
+      });
+    }
   }
 
 })();

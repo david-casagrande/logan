@@ -12,7 +12,7 @@
   echo "<div class=\"main-view\">";
     echo "<div class=\"row extra-padding\">";
       echo "<div class=\"small-12 columns\"><p><img src=\"{$h1img}\" alt=\"Our Products\"/></p></div>";
-      echo "<div class=\"medium-3 columns\">";
+      echo "<div class=\"medium-3 columns products-nav\">";
         wp_nav_menu($navOpts);
       echo "</div>";
       echo "<div class=\"medium-9 columns narrative\">";
