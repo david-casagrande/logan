@@ -340,7 +340,8 @@ td, th {
   font-family: 'Lato', sans-serif; }
 
 .main-nav, .sub-nav, .narrative h3, .narrative .call-out {
-  font-family: 'bebas', sans-serif; }
+  font-family: 'bebas', sans-serif;
+  letter-spacing: 0.025rem; }
 
 body:before, .main-nav, .narrative img {
   width: 100%; }
@@ -1987,7 +1988,8 @@ body:before {
   height: 78px;
   left: 0;
   top: 85px;
-  z-index: 2; }
+  z-index: 2;
+  letter-spacing: 0.075rem; }
   .main-nav .menu {
     margin: 0; }
   .main-nav li {
