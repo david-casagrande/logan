@@ -23,8 +23,6 @@
               echo "<div class=\"medium-6 columns narrative\">{$narrative3}</div>";
             echo "</div>";
           echo "</div>";
-          // echo "<div class=\"medium-4 columns narrative middle-column\">{$narrative2}</div>";
-          // echo "<div class=\"medium-4 columns narrative\">{$narrative3}</div>";
         echo "</div>";
       echo "</div>";
     }
