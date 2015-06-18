@@ -10,9 +10,10 @@
   $image = get_theme_mod('products_image');
   $h1img = get_template_directory_uri() . '/images/OurProducts.png';
   $images = array('default' => $image);
-  if ( have_posts() ) {
-    while ( have_posts() ) {
-      the_post();
+  $query = new WP_Query(array('post_type' => 'product', 'posts_per_page' => -1));
+  if ($query->have_posts()) {
+    while ( $query->have_posts() ) {
+      $query->the_post();
       $images[get_permalink()] = get_field('image');
     }
   }
