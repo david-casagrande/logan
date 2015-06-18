@@ -4,8 +4,6 @@
   withTab();
   productNav();
 
-  // checkScrollTimer();
-
   function checkScrollTimer() {
     setTimeout(function() {
       checkScrollPosition();

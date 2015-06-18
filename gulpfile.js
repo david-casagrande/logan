@@ -20,7 +20,7 @@ gulp.task('vendor', function() {
 });
 
 gulp.task('watch', function() {
-  gulp.watch(scssPath, ['sass', 'vendor'])
+  gulp.watch(scssPath, ['sass', 'vendor', 'minify-js', 'minify-sass'])
 });
 
 gulp.task('minify-sass', ['sass'], function() {
@@ -30,12 +30,13 @@ gulp.task('minify-sass', ['sass'], function() {
     .pipe(gulp.dest('./css'))
 })
 
-gulp.task('minify-js', ['vendor'],function() {
-  gulp.src('javascript/*.js')
+gulp.task('minify-js', ['vendor'], function() {
+  gulp.src(['javascript/logan-sausage.js', 'javascript/vendor.js'])
+    // .pipe(concat('/dist/logan-sausage.production.js'))
     .pipe(uglify({
       mangle: true
     }))
-    .pipe(gulp.dest('javascript/dist'))
+    .pipe(gulp.dest('./javascript/dist'))
 });
 
 
