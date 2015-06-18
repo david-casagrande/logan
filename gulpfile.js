@@ -23,4 +23,20 @@ gulp.task('watch', function() {
   gulp.watch(scssPath, ['sass', 'vendor'])
 });
 
-gulp.task('default', ['watch', 'sass', 'vendor'])
+gulp.task('minify-sass', ['sass'], function() {
+  gulp.src('./css/logan-sausage.css')
+    .pipe(rename('logan-sausage.min.css'))
+    .pipe(minifyCSS())
+    .pipe(gulp.dest('./css'))
+})
+
+gulp.task('minify-js', ['vendor'],function() {
+  gulp.src('javascript/*.js')
+    .pipe(uglify({
+      mangle: true
+    }))
+    .pipe(gulp.dest('javascript/dist'))
+});
+
+
+gulp.task('default', ['watch', 'sass', 'vendor', 'minify-sass', 'minify-js'])
