@@ -1,6 +1,10 @@
 .sub-nav {
   @extend %secondary-font;
   margin-left: 0;
+
+  a {
+    display: block;
+  }
 }
 
 .sub-nav li {
@@ -47,20 +51,21 @@
 .sub-nav .sub-menu {
   @extend %display-none;
   @extend %default-font;
+  margin-bottom: 0.5rem;
   // height: 0;
   // overflow: hidden;
   // transition: height 3s;
   // -webkit-transition: height 3s;
 
   &.open {
-    display: block;
+    // display: block;
     // height: 100%;
   }
 
   li {
     @extend %display-list-item;
     list-style-type: disc;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
 
     &.current-menu-item,
     &.current-menu-item a {

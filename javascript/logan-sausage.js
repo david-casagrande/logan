@@ -44,19 +44,38 @@
   }
 
   function productNav() {
-    var navItems = document.querySelectorAll('.products-nav a');
-    console.log(navItems.length);
+    var navItems = document.querySelectorAll('.products-nav .menu-item-has-children > a');
     for(var x = 0; x < navItems.length; x++) {
       navItems[x].addEventListener('click', function(e) {
-        e.preventDefault();
-        var sibling = this.nextElementSibling;
-        if(!sibling) { return; }
-        sibling.classList.toggle('open');
-
-        var parent = this.parentNode;
-        parent.classList.toggle('current-menu-item');
+        productNavClick(e);
       });
     }
   }
 
+  function productNavClick(e) {
+    e.preventDefault();
+    var target = e.target;
+    var parent = target.parentNode;
+    var img = document.getElementById('product-image');
+    var currentClassName = 'current-menu-item';
+    var image;
+
+    if(parent.classList.contains(currentClassName)) {
+      parent.classList.remove(currentClassName);
+      image = LOGAN_IMAGES['default'];
+    } else {
+      closeProductNavItems();
+      parent.classList.add(currentClassName);
+      image = LOGAN_IMAGES[e.target.href];
+    }
+
+    img.setAttribute('src', image);
+  }
+
+  function closeProductNavItems() {
+    var navItems = document.querySelectorAll('.products-nav .menu-item-has-children');
+    for(var x = 0; x < navItems.length; x++) {
+      navItems[x].classList.remove('current-menu-item');
+    }
+  }
 })();

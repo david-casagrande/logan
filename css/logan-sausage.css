@@ -2004,6 +2004,8 @@ body:before {
 
 .sub-nav {
   margin-left: 0; }
+  .sub-nav a {
+    display: block; }
 
 .sub-nav li {
   font-size: 1.375rem; }
@@ -2037,13 +2039,13 @@ body:before {
   top: 14px;
   left: -20px; }
 
-.sub-nav .sub-menu.open {
-  display: block; }
-.sub-nav .sub-menu li {
-  list-style-type: disc;
-  font-size: 1.25rem; }
-.sub-nav .sub-menu a {
-  cursor: default; }
+.sub-nav .sub-menu {
+  margin-bottom: 0.5rem; }
+  .sub-nav .sub-menu li {
+    list-style-type: disc;
+    font-size: 1.125rem; }
+  .sub-nav .sub-menu a {
+    cursor: default; }
 
 .logo {
   background-image: url("../images/logo.png");
