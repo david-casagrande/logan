@@ -50,6 +50,13 @@
         productNavClick(e);
       });
     }
+
+    var subNavItems = document.querySelectorAll('.products-nav .sub-menu a');
+    for(var x = 0; x < subNavItems.length; x++) {
+      subNavItems[x].addEventListener('click', function(e) {
+        e.preventDefault();
+      });
+    }
   }
 
   function productNavClick(e) {
