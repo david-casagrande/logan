@@ -44,7 +44,7 @@
   }
 
   function productNav() {
-    var navItems = document.querySelectorAll('.products-nav .menu-item-has-children > a');
+    var navItems = document.querySelectorAll('.products-nav > ul > li > a');
     for(var x = 0; x < navItems.length; x++) {
       navItems[x].addEventListener('click', function(e) {
         productNavClick(e);
@@ -73,7 +73,7 @@
   }
 
   function closeProductNavItems() {
-    var navItems = document.querySelectorAll('.products-nav .menu-item-has-children');
+    var navItems = document.querySelectorAll('.products-nav > ul > li');
     for(var x = 0; x < navItems.length; x++) {
       navItems[x].classList.remove('current-menu-item');
     }
