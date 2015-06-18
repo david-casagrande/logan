@@ -2028,6 +2028,10 @@ body:before {
     border-color: transparent transparent transparent #000;
     border-left-style: solid; }
 
+@-moz-document url-prefix() {
+  .sub-nav li.menu-item-has-children:before {
+    top: 6px; } }
+
 .sub-nav li.current-menu-item.menu-item-has-children:before, .sub-nav li.current-menu-parent.menu-item-has-children:before {
   border: inset 0.5rem;
   content: "";

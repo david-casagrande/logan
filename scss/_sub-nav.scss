@@ -30,6 +30,13 @@
   }
 }
 
+//FireFox hack... ew
+@-moz-document url-prefix() {
+  .sub-nav li.menu-item-has-children:before {
+    top: 6px;
+  }
+}
+
 .sub-nav li.current-menu-item,
 .sub-nav li.current-menu-parent {
 
