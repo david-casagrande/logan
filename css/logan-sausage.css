@@ -370,7 +370,7 @@ body:before, .main-nav, .logo {
 .sub-nav li.menu-item-has-children:before, .main-view .view-more-tab {
   position: absolute; }
 
-.main-view > .row {
+.sub-nav li, .main-view > .row {
   position: relative; }
 
 .social-media:before, .main-nav a, .social-media i, .social-media span {
@@ -2016,7 +2016,7 @@ body:before {
     border-color: transparent transparent transparent #d12229;
     border-left-style: solid;
     top: 10px;
-    left: 12px; }
+    left: -13px; }
   .sub-nav li.menu-item-has-children:hover:before {
     border: inset 0.5rem;
     content: "";
@@ -2035,7 +2035,7 @@ body:before {
   border-color: #000 transparent transparent transparent;
   border-top-style: solid;
   top: 14px;
-  left: 4px; }
+  left: -20px; }
 
 .sub-nav .sub-menu.open {
   display: block; }
