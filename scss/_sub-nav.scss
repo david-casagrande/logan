@@ -99,3 +99,32 @@
     @extend %display-list-item;
   }
 }
+
+@media #{$small-only} {
+  .sub-nav {
+
+    > li {
+      font-size: 1.75rem;
+      border-bottom: 1px solid #000;
+    }
+
+    > li:first-child {
+      border-top: 1px solid #000;
+    }
+
+    > li.menu-item-has-children:before {
+      left: auto;
+      right: 0;
+      top: 16px;
+      @include css-triangle(0.875rem, $logan-primary-color, left);
+    }
+
+    > li.menu-item-has-children:hover:before {
+      @include css-triangle(0.875rem, $sub-nav-active-color, left);
+    }
+
+    > li > a {
+      padding: 0.5rem 0;
+    }
+  }
+}

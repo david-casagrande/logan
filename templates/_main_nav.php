@@ -22,3 +22,4 @@
     </div>
   </div>
 </div>
+<a class="nav-toggle show-for-small-only" href="#"><span></span></a>

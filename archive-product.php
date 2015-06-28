@@ -18,6 +18,19 @@
     }
   }
   $images = json_encode($images);
+
+  echo "<div class=\"main-view\">";
+    echo "<div class=\"row extra-padding\">";
+      echo "<div class=\"small-12 columns\"><p><img src=\"{$h1img}\" alt=\"Our Products\"/></p></div>";
+      echo "<div class=\"medium-3 columns products-nav\">";
+        wp_nav_menu($navOpts);
+      echo "</div>";
+      echo "<div class=\"medium-9 columns narrative show-for-medium-up\">";
+        echo "<p><img id=\"product-image\" src=\"{$image}\" alt=\"{$title}\" /></p>";
+      echo "</div>";
+    echo "</div>";
+  echo "</div>";
+
   echo "<script type=\"text/javascript\">";
     echo "var LOGAN_IMAGES = {$images};";
     //preload images
@@ -29,18 +42,6 @@
       echo "}";
     echo "})();";
   echo "</script>";
-
-  echo "<div class=\"main-view\">";
-    echo "<div class=\"row extra-padding\">";
-      echo "<div class=\"small-12 columns\"><p><img src=\"{$h1img}\" alt=\"Our Products\"/></p></div>";
-      echo "<div class=\"medium-3 columns products-nav\">";
-        wp_nav_menu($navOpts);
-      echo "</div>";
-      echo "<div class=\"medium-9 columns narrative\">";
-        echo "<p><img id=\"product-image\" src=\"{$image}\" alt=\"{$title}\" /></p>";
-      echo "</div>";
-    echo "</div>";
-  echo "</div>";
 ?>
 
 <?php get_footer(); ?>

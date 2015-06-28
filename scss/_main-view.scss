@@ -32,3 +32,17 @@
     padding-top: $main-view-middle-row-padding-top;
   }
 }
+
+@media #{$small-only} {
+  .main-view {
+    padding-top: $mobile-body-before;
+  }
+
+  .main-view > .row {
+    padding-top: 8.5rem;
+  }
+
+  .home .main-view {
+    display: none;
+  }
+}

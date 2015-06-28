@@ -3,6 +3,7 @@
 
   withTab();
   productNav();
+  navToggle();
 
   function checkScrollTimer() {
     setTimeout(function() {
@@ -82,5 +83,16 @@
     for(var x = 0; x < navItems.length; x++) {
       navItems[x].classList.remove('current-menu-item');
     }
+  }
+
+  function navToggle() {
+    var navToggle = document.querySelector('.nav-toggle');
+    var nav = document.querySelector('.main-nav');
+
+    navToggle.addEventListener('click', function mainNavToggle(e) {
+      e.preventDefault();
+      navToggle.classList.toggle('active');
+      nav.classList.toggle('active');
+    });
   }
 })();

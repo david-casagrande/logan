@@ -39,3 +39,41 @@
 .customize-support .main-nav {
   top: $main-nav-top + $wp-admin-bar-height;
 }
+
+@media #{$small-only} {
+  .main-nav {
+    display: none;
+    top: 0;
+    height: auto;
+    padding-top: 34px;
+    z-index: 4;
+
+    &.active {
+      display: block;
+    }
+
+    li,
+    .right-nav {
+      border-top: 1px solid #fff;
+    }
+
+    li {
+      display: block;
+      text-align: center;
+      font-size: 2rem;
+
+      &:first-child {
+        border-top: 0;
+      }
+    }
+
+    a {
+      line-height: 100px;
+    }
+
+    .left-nav,
+    .right-nav {
+      padding: 0;
+    }
+  }
+}
