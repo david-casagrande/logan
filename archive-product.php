@@ -18,7 +18,17 @@
     }
   }
   $images = json_encode($images);
-  echo "<script>var LOGAN_IMAGES = {$images}</script>";
+  echo "<script type=\"text/javascript\">";
+    echo "var LOGAN_IMAGES = {$images};";
+    //preload images
+    echo "(function() {";
+      echo "for(var img in LOGAN_IMAGES) {";
+        echo "if(LOGAN_IMAGES.hasOwnProperty(img)) {";
+          echo "var image = new Image(); image.src = LOGAN_IMAGES[img]; console.log(LOGAN_IMAGES[img]);";
+        echo "}";
+      echo "}";
+    echo "})();";
+  echo "</script>";
 
   echo "<div class=\"main-view\">";
     echo "<div class=\"row extra-padding\">";
