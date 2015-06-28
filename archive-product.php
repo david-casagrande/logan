@@ -24,7 +24,7 @@
     echo "(function() {";
       echo "for(var img in LOGAN_IMAGES) {";
         echo "if(LOGAN_IMAGES.hasOwnProperty(img)) {";
-          echo "var image = new Image(); image.src = LOGAN_IMAGES[img]; console.log(LOGAN_IMAGES[img]);";
+          echo "var image = new Image(); image.src = LOGAN_IMAGES[img];";
         echo "}";
       echo "}";
     echo "})();";
