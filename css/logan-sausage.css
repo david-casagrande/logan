@@ -387,6 +387,11 @@ body:before, .main-nav, .logo {
 .sub-nav li:hover a, .sub-nav li.current-menu-item a, .sub-nav li.current-menu-parent a {
   color: #000; }
 
+.reverse-link {
+  color: #000; }
+  .reverse-link:hover {
+    color: #d12229; }
+
 meta.foundation-version {
   font-family: "/5.5.2/"; }
 

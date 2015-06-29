@@ -212,6 +212,13 @@ $narrative-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.30);
   color: $sub-nav-active-color;
 }
 
+.reverse-link {
+  color: #000;
+
+  &:hover {
+    color: $logan-primary-color;
+  }
+}
 
 // @mixin rotate($degrees) {
 //   transform: rotate($degrees);
