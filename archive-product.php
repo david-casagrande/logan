@@ -18,17 +18,6 @@
     }
   }
   $images = json_encode($images);
-  echo "<script type=\"text/javascript\">";
-    echo "var LOGAN_IMAGES = {$images};";
-    //preload images
-    echo "(function() {";
-      echo "for(var img in LOGAN_IMAGES) {";
-        echo "if(LOGAN_IMAGES.hasOwnProperty(img)) {";
-          echo "var image = new Image(); image.src = LOGAN_IMAGES[img];";
-        echo "}";
-      echo "}";
-    echo "})();";
-  echo "</script>";
 
   echo "<div class=\"main-view\">";
     echo "<div class=\"row extra-padding\">";
@@ -36,11 +25,24 @@
       echo "<div class=\"medium-3 columns products-nav\">";
         wp_nav_menu($navOpts);
       echo "</div>";
-      echo "<div class=\"medium-9 columns narrative\">";
+      echo "<div class=\"medium-9 columns narrative show-for-medium-up\">";
         echo "<p><img id=\"product-image\" src=\"{$image}\" alt=\"{$title}\" /></p>";
       echo "</div>";
     echo "</div>";
   echo "</div>";
+
+  echo "<script type=\"text/javascript\">";
+    echo "var LOGAN_IMAGES = {$images};";
+    //preload images
+    echo "(function() {";
+      echo  "if(window.innerWidth <= 960) { return; }"; //960 is mobile breakpoint in css
+      echo "for(var img in LOGAN_IMAGES) {";
+        echo "if(LOGAN_IMAGES.hasOwnProperty(img)) {";
+          echo "var image = new Image(); image.src = LOGAN_IMAGES[img];";
+        echo "}";
+      echo "}";
+    echo "})();";
+  echo "</script>";
 ?>
 
 <?php get_footer(); ?>

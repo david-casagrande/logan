@@ -11,3 +11,10 @@ $body-font-family: $logan-default-font;
 // $info-color: #a0d3e8 !default;      // cornflower
 
 $column-gutter: rem-calc(50);
+
+$small-range: (0, 60em); // 0, 960px
+$medium-range: (60.063em, 64em); // 961px, 1024px
+$large-range: (64.063em, 90em); // 1025px, 1440px
+$xlarge-range: (90.063em, 120em); // 1441px, 1920px
+$xxlarge-range: (120.063em); // 1921px
+$screen: 'only screen' !default;

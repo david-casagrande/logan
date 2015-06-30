@@ -14,3 +14,14 @@
 .customize-support .logo {
   top: $logo-top + $wp-admin-bar-height;
 }
+
+@media #{$small-only} {
+  .page .logo,
+  .archive .logo,
+  .post .logo,
+  .single .logo {
+    width: $logo-width-mobile;
+    height: $logo-height-mobile;
+    margin-left: -($logo-width-mobile/2) - 5px;
+  }
+}

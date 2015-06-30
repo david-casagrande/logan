@@ -1,0 +1,63 @@
+//shamelessly stolen from http://codepen.io/elijahmanor/pen/Igpoe
+
+$nav-toggle-width: 42px;
+$nav-toggle-height: 5px;
+$nav-toggle-offset: 10px;
+$nav-toggle-color: #fff;
+
+.nav-toggle {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px $nav-toggle-width 16px 0;
+  position: fixed;
+  top: 1.375rem;
+  right: 1.375rem;
+  z-index: 5;
+
+  span,
+  span:before,
+  span:after {
+    background: $nav-toggle-color;
+    border-radius: 4px;
+    content: '';
+    cursor: pointer;
+    display: block;
+    height: $nav-toggle-height;
+    position: absolute;
+    // transition: all 500ms ease-in-out;
+    width: $nav-toggle-width;
+  }
+
+  span:before {
+    top: -$nav-toggle-offset;
+  }
+
+  span:after {
+    bottom: -$nav-toggle-offset;
+  }
+
+  &.active {
+
+    span {
+      background-color: transparent;
+    }
+
+    span:before,
+    span:after {
+      top: 0;
+    }
+
+    span:before {
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+
+    }
+
+    span:after {
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+    }
+
+  }
+
+}

@@ -19,3 +19,9 @@ body {
     z-index: 2;
   }
 }
+
+@media #{$small-only} {
+  body:before {
+    height: $mobile-body-before;
+  }
+}

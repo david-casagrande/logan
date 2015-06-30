@@ -30,6 +30,8 @@ $main-view-middle-row-padding-top: 4.25rem;
 $logo-image-url: image-url('logo.png');
 $logo-width: 322px;
 $logo-height: 248px;
+$logo-width-mobile: 200px;
+$logo-height-mobile: 154px;
 $logo-top: 17px;
 
 $main-view-background-opacity: 0.85;
@@ -42,6 +44,8 @@ $tab-height: 55px;
 $narrative-callout-background-color: $logan-primary-color;
 $narrative-callout-color: #fff;
 $narrative-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.30);
+
+$mobile-body-before: 70px;
 
 // $background-color: #131509;
 // $navigation-color: a#989997;
@@ -213,10 +217,10 @@ $narrative-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.30);
 }
 
 .reverse-link {
-  color: #000;
+  color: #000 !important;
 
   &:hover {
-    color: $logan-primary-color;
+    color: $logan-primary-color !important;
   }
 }
 

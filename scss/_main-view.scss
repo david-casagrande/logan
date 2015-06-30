@@ -2,6 +2,7 @@
   padding-bottom: 60px;
   padding-top: $main-nav-height + $main-nav-top;
   z-index: 1;
+  -webkit-overflow-scrolling: touch;
 
   > .row {
     @extend %main-view-background;
@@ -30,5 +31,19 @@
 @media #{$medium-up} {
   .main-view > .row > .middle-column {
     padding-top: $main-view-middle-row-padding-top;
+  }
+}
+
+@media #{$small-only} {
+  .main-view {
+    padding-top: $mobile-body-before;
+  }
+
+  .main-view > .row {
+    padding-top: 8.5rem;
+  }
+
+  .home .main-view {
+    display: none;
   }
 }
