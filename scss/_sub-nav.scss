@@ -100,6 +100,24 @@
   }
 }
 
+.back-to-products {
+  @extend %display-block;
+  @extend %position-relative;
+  padding: 0 0 1rem 1.75rem;
+  font-size: 1.25rem;
+
+  &:before {
+    @extend %position-absolute;
+    @include css-triangle(0.75rem, $sub-nav-active-color, right);
+    top: 0.2rem;
+    left: -0.5rem;
+  }
+
+  &:hover:before {
+    color: $logan-primary-color !important;
+  }
+}
+
 @media #{$small-only} {
   .sub-nav {
 
@@ -125,6 +143,29 @@
 
     > li > a {
       padding: 0.5rem 0;
+    }
+  }
+
+  .sub-nav.single {
+    > li {
+      border: 0;
+    }
+
+    > li > a {
+      color: $logan-primary-color;
+      font-size: 1.875rem;
+
+      &:hover {
+        color: #000;
+      }
+    }
+
+    > li:before {
+      display: none !important;
+    }
+
+    .sub-menu li {
+      font-size: 1.313rem;
     }
   }
 }

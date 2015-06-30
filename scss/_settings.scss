@@ -217,10 +217,10 @@ $mobile-body-before: 70px;
 }
 
 .reverse-link {
-  color: #000;
+  color: #000 !important;
 
   &:hover {
-    color: $logan-primary-color;
+    color: $logan-primary-color !important;
   }
 }
 

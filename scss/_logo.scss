@@ -18,7 +18,8 @@
 @media #{$small-only} {
   .page .logo,
   .archive .logo,
-  .post .logo {
+  .post .logo,
+  .single .logo {
     width: $logo-width-mobile;
     height: $logo-height-mobile;
     margin-left: -($logo-width-mobile/2) - 5px;

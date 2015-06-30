@@ -59,6 +59,7 @@
   }
 
   function productNavClick(e) {
+    if (window.innerWidth <= 960) { return; } //960 is mobile breakpoint in css
     e.preventDefault();
     var target = e.target;
     var parent = target.parentNode;
