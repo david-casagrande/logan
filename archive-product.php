@@ -35,6 +35,7 @@
     echo "var LOGAN_IMAGES = {$images};";
     //preload images
     echo "(function() {";
+      echo  "if(window.innerWidth <= 960) { return; }"; //960 is mobile breakpoint in css
       echo "for(var img in LOGAN_IMAGES) {";
         echo "if(LOGAN_IMAGES.hasOwnProperty(img)) {";
           echo "var image = new Image(); image.src = LOGAN_IMAGES[img];";
