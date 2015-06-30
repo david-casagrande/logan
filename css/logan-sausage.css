@@ -2159,7 +2159,8 @@ body:before {
 .main-view {
   padding-bottom: 60px;
   padding-top: 163px;
-  z-index: 1; }
+  z-index: 1;
+  -webkit-overflow-scrolling: touch; }
   .main-view > .row {
     padding: 5.5rem 1rem 2rem; }
     .main-view > .row.extra-padding {
