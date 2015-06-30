@@ -16,6 +16,12 @@
 }
 
 @media #{$small-only} {
+  .logo {
+    width: 260px;
+    height: 200px;
+    margin-left: -145px;
+  }
+
   .page .logo,
   .archive .logo,
   .post .logo,

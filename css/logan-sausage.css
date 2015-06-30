@@ -2151,6 +2151,10 @@ body:before {
   top: 49px; }
 
 @media only screen and (max-width: 60em) {
+  .logo {
+    width: 260px;
+    height: 200px;
+    margin-left: -145px; }
   .page .logo, .archive .logo, .post .logo, .single .logo {
     width: 200px;
     height: 154px;
