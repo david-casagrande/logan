@@ -4,6 +4,7 @@
   withTab();
   productNav();
   navToggle();
+  disableLinksForSingleProduct();
 
   function checkScrollTimer() {
     setTimeout(function() {
@@ -95,5 +96,14 @@
       navToggle.classList.toggle('active');
       nav.classList.toggle('active');
     });
+  }
+
+  function disableLinksForSingleProduct() {
+    var productLinks = document.querySelectorAll('.sub-nav.single a');
+    for(var x = 0; x < productLinks.length; x++) {
+      productLinks[x].addEventListener('click', function(e) {
+        e.preventDefault();
+      });
+    }
   }
 })();

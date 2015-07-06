@@ -2082,6 +2082,9 @@ body:before {
   .sub-nav .sub-menu a {
     cursor: default; }
 
+.sub-nav.single a, .sub-nav.single li {
+  color: #000 !important; }
+
 .back-to-products {
   padding: 0 0 1rem 1.75rem;
   font-size: 1.25rem; }

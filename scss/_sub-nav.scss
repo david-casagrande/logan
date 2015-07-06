@@ -98,6 +98,11 @@
   .sub-menu li {
     @extend %display-list-item;
   }
+
+  a,
+  li {
+    color: #000 !important;
+  }
 }
 
 .back-to-products {
