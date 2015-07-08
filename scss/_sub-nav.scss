@@ -105,21 +105,41 @@
   }
 }
 
-.back-to-products {
-  @extend %display-block;
+.products-back,
+.products-next {
+  @extend %display-inline-block;
   @extend %position-relative;
   padding: 0 0 1rem 1.75rem;
   font-size: 1.25rem;
+  visibility: hidden;
+
+  &.visible {
+    visibility: visible;
+  }
 
   &:before {
     @extend %position-absolute;
-    @include css-triangle(0.75rem, $sub-nav-active-color, right);
     top: 0.2rem;
-    left: -0.5rem;
   }
 
   &:hover:before {
     color: $logan-primary-color !important;
+  }
+}
+
+.products-back {
+  &:before {
+    @include css-triangle(0.75rem, $sub-nav-active-color, right);
+    left: -0.5rem;
+  }
+}
+
+.products-next {
+  margin-right: 1.625rem;
+
+  &:before {
+    @include css-triangle(0.75rem, $sub-nav-active-color, left);
+    right: -2.125rem;
   }
 }
 

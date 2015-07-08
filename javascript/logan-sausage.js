@@ -5,6 +5,7 @@
   productNav();
   navToggle();
   disableLinksForSingleProduct();
+  backNextNavForSingleProduct();
 
   function checkScrollTimer() {
     setTimeout(function() {
@@ -106,4 +107,31 @@
       });
     }
   }
+
+  function backNextNavForSingleProduct() {
+    var current = document.querySelector('.sub-nav.single > li.current-menu-item > a');
+    var back = document.querySelector('.products-back');
+    var next = document.querySelector('.products-next');
+
+    _setLinkForSingleProductNav(current, back, 'previousElementSibling');
+    _setLinkForSingleProductNav(current, next, 'nextElementSibling');
+  }
+
+  function _setLinkForSingleProductNav(current, el, findSibling) {
+    if(!current || !el) { return; }
+    var parent = current.parentNode;
+
+    if(!parent) { return; }
+    var sibling = parent[findSibling];
+
+    if(!sibling) { return; }
+    el.classList.add('visible');
+
+    var a = sibling.querySelector('a');
+    if(!a) { return; }
+
+    var href = a.getAttribute('href');
+    el.setAttribute('href', href);
+  }
+
 })();

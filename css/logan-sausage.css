@@ -352,10 +352,10 @@ body:before {
 body:before {
   left: 0; }
 
-.main-nav a, .sub-nav li, .sub-nav li.current-menu-item .sub-menu, .sub-nav li.current-menu-parent .sub-menu, .sub-nav.single li.current-menu-item, .sub-nav.single li.current-menu-parent, .back-to-products, .logo, .main-view .view-more-tab, .narrative .call-out, .social-media {
+.main-nav a, .sub-nav li, .sub-nav li.current-menu-item .sub-menu, .sub-nav li.current-menu-parent .sub-menu, .sub-nav.single li.current-menu-item, .sub-nav.single li.current-menu-parent, .logo, .main-view .view-more-tab, .narrative .call-out, .social-media {
   display: block; }
 
-.social-media:before, .main-nav li, .social-media i, .social-media span {
+.social-media:before, .main-nav li, .products-back, .products-next, .social-media i, .social-media span {
   display: inline-block; }
 
 .sub-nav .sub-menu, .sub-nav.single li {
@@ -367,10 +367,10 @@ body:before {
 body:before, .main-nav, .logo {
   position: fixed; }
 
-.sub-nav li.menu-item-has-children:before, .back-to-products:before, .main-view .view-more-tab {
+.sub-nav li.menu-item-has-children:before, .products-back:before, .products-next:before, .main-view .view-more-tab {
   position: absolute; }
 
-.sub-nav li, .back-to-products, .main-view > .row {
+.sub-nav li, .products-back, .products-next, .main-view > .row {
   position: relative; }
 
 .social-media:before, .main-nav a, .social-media i, .social-media span {
@@ -2085,21 +2085,38 @@ body:before {
 .sub-nav.single a, .sub-nav.single li {
   color: #000 !important; }
 
-.back-to-products {
+.products-back, .products-next {
   padding: 0 0 1rem 1.75rem;
-  font-size: 1.25rem; }
-  .back-to-products:before {
+  font-size: 1.25rem;
+  visibility: hidden; }
+  .products-back.visible, .products-next.visible {
+    visibility: visible; }
+  .products-back:before, .products-next:before {
+    top: 0.2rem; }
+  .products-back:hover:before, .products-next:hover:before {
+    color: #d12229 !important; }
+
+.products-back:before {
+  border: inset 0.75rem;
+  content: "";
+  display: block;
+  height: 0;
+  width: 0;
+  border-color: transparent #000 transparent transparent;
+  border-right-style: solid;
+  left: -0.5rem; }
+
+.products-next {
+  margin-right: 1.625rem; }
+  .products-next:before {
     border: inset 0.75rem;
     content: "";
     display: block;
     height: 0;
     width: 0;
-    border-color: transparent #000 transparent transparent;
-    border-right-style: solid;
-    top: 0.2rem;
-    left: -0.5rem; }
-  .back-to-products:hover:before {
-    color: #d12229 !important; }
+    border-color: transparent transparent transparent #000;
+    border-left-style: solid;
+    right: -2.125rem; }
 
 @media only screen and (max-width: 60em) {
   .sub-nav > li {
